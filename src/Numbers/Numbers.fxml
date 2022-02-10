@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="482.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Numbers.Numbers">
+    <children>
+        <ImageView fx:id="image" fitHeight="482.0" fitWidth="630.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="b1" layoutX="504.0" layoutY="431.0" mnemonicParsing="false" onAction="#b1clicked" prefHeight="37.0" prefWidth="112.0" text="START">
+            <font>
+                <Font name="Comic Sans MS" size="18.0" />
+            </font>
+            <effect>
+                <Lighting diffuseConstant="2.0">
+                    <bumpInput>
+                        <Shadow />
+                    </bumpInput>
+                    <light>
+                        <Light.Distant color="#e5ff00" />
+                    </light>
+                </Lighting>
+            </effect>
+        </Button>
+    </children>
+</AnchorPane>

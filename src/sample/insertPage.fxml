@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="482.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.InsertPage">
+   <children>
+      <ImageView fx:id="image" fitHeight="482.0" fitWidth="630.0" layoutX="-2.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="175.0" layoutY="59.0" prefHeight="55.0" prefWidth="303.0" text="Enter Your Name:" textFill="#a10000">
+         <font>
+            <Font name="Book Antiqua Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textField" layoutX="175.0" layoutY="114.0" prefHeight="41.0" prefWidth="294.0" promptText="Name">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="b1" layoutX="287.0" layoutY="171.0" mnemonicParsing="false" onAction="#textEntered" text="OK">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="2.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#0fe3ee" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>

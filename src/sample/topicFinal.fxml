@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="482.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.TopicFinal">
+   <children>
+      <ImageView fx:id="image" fitHeight="482.0" fitWidth="630.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="b1" layoutX="199.0" layoutY="379.0" mnemonicParsing="false" onAction="#b1clicked" prefHeight="38.0" prefWidth="106.0" text="EXIT">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="2.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="RED" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Button fx:id="b2" layoutX="323.0" layoutY="379.0" mnemonicParsing="false" onAction="#b2clicked" prefHeight="38.0" prefWidth="106.0" text="CONTINUE">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="2.0">
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant color="#26ff00" />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <Label fx:id="label" layoutX="304.0" layoutY="243.0" prefHeight="77.0" prefWidth="157.0">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
